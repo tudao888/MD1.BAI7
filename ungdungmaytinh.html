@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Ứng dụng máy tính</h1>
+<table>
+  <tr>
+    <td><input type="number" id="nhapso1"></td>
+    <td><input type="number" id="nhapso2"></td>
+  </tr>
+  <tr>
+    <th><button type="button" onclick="pheptinhcong()">Cộng</button></th>
+    <th><button type="button" onclick="pheptinhtru()">Trừ</button></th>
+    <th><button type="button" onclick="pheptinhnhan()">Nhân</button></th>
+    <th><button type="button" onclick="pheptinhchia()">Chia</button></th>
+  </tr>
+</table>
+<script>
+  function pheptinhcong () {
+    let so1 = document.getElementById('nhapso1').value;
+    let so2 = document.getElementById('nhapso2').value;
+    let so3 = parseInt(so1) + parseInt(so2)
+    alert(so3); }
+    function pheptinhtru () {
+      let so1 = document.getElementById('nhapso1').value;
+      let so2 = document.getElementById('nhapso2').value;
+      let so4 = parseInt(so1) - parseInt(so2)
+      alert("Result: " + so4);
+    }
+  function pheptinhnhan () {
+    let so1 = document.getElementById('nhapso1').value;
+    let so2 = document.getElementById('nhapso2').value;
+    let so5 = parseInt(so1) * parseInt(so2)
+    alert("Result: " + so5);
+  }
+  function pheptinhchia () {
+    let so1 = document.getElementById('nhapso1').value;
+    let so2 = document.getElementById('nhapso2').value;
+    let so6 = parseInt(so1) / parseInt(so2)
+    alert("Result: " + so6);
+  }
+
+</script>
+</body>
+</html>
