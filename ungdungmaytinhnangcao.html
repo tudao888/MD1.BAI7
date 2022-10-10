@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<!--  // dòng biểu thức-->
+  <tr>
+    <td colspan="3"><input type="text" id="bieuthuc"></td>
+  </tr>
+<!--  // hàng 1-->
+  <tr>
+    <td><button onclick="nhapgiatri(value)" type="button" value="7">7</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="8">8</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="8">9</button></td>
+    <td><button onclick="nhapgiatri(value)"type="button" value="+">+</button></td>
+  </tr>
+<!--  // hàng 2-->
+  <tr>
+    <td><button onclick="nhapgiatri(value)" type="button" value="4">4</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="5">5</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="6">6</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="-">-</button></td>
+  </tr>
+<!--  // hàng 3-->
+  <tr>
+    <td><button onclick="nhapgiatri(value)" type="button" value="1">1</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="2">2</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="3">3</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="*">*</button></td>
+  </tr>
+<!--  //hàng 4-->
+  <tr>
+    <td><button onclick="nhapgiatri(value)" type="button" value="0">0</button></td>
+    <td><button onclick="xoa()" type="button" value="AC">AC</button></td>
+    <td><button onclick="ketqua()" type="button" value="=">=</button></td>
+    <td><button onclick="nhapgiatri(value)" type="button" value="/">/</button></td>
+  </tr>
+</table>
+<script>
+  let a = document.getElementById("bieuthuc")
+  function nhapgiatri(value) {
+    a.value += value;
+  }
+  function xoa() {
+    a.value = "";
+  }
+  function ketqua() {
+    a.value = eval(a.value);
+  }
+</script>
+</body>
+</html>

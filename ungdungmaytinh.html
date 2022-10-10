@@ -8,8 +8,9 @@
 <h1>Ứng dụng máy tính</h1>
 <table>
   <tr>
-    <td><input type="number" id="nhapso1"></td>
-    <td><input type="number" id="nhapso2"></td>
+    <input type="text" id="input">
+<!--    <td><input type="number" id="nhapso1"></td>-->
+<!--    <td><input type="number" id="nhapso2"></td>-->
   </tr>
   <tr>
     <th><button type="button" onclick="pheptinhcong()">Cộng</button></th>
@@ -40,8 +41,10 @@
     let so1 = document.getElementById('nhapso1').value;
     let so2 = document.getElementById('nhapso2').value;
     let so6 = parseInt(so1) / parseInt(so2)
-    alert("Result: " + so6);
-  }
+    alert("Result: " + so6); }
+  //   // let input = document.getElementById('input').value
+  //   // alert(eval(input))
+  // }
 
 </script>
 </body>
