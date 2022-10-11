@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+  td {
+    text-align: center;
+  }
+  input {
+    width: 100%;
+  }
+</style>
+<body>
+<table border="1">
+  <tr>
+    <td colspan="4" style="text-align: left">
+      <p id="result">0</p>
+    </td>
+  </tr>
+  <tr>
+    <td><input type="button" value="(" id="(" onclick="giatri('(')"></td>
+    <td><input type="button" value=")" id=")" onclick="giatri(')')"></td>
+    <td><input type="button" value="%" id="%" onclick="giatri('%')"></td>
+    <td><input type="button" value="AC" id="AC" onclick="xoa()"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="7" id="7" onclick="giatri('7')"></td>
+    <td><input type="button" value="8" id="8" onclick="giatri('8')"></td>
+    <td><input type="button" value="9" id="9" onclick="giatri('9')"></td>
+    <td><input type="button" value="/" id="/" onclick="giatri('/')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="4" id="4" onclick="giatri('4')"></td>
+    <td><input type="button" value="5" id="5" onclick="giatri('5')"></td>
+    <td><input type="button" value="6" id="6" onclick="giatri('6')"></td>
+    <td><input type="button" value="-" id="-" onclick="giatri('-')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="1" id="1" onclick="giatri('1')"></td>
+    <td><input type="button" value="2" id="2" onclick="giatri('2')"></td>
+    <td><input type="button" value="3" id="3" onclick="giatri('3')"></td>
+    <td><input type="button" value="*" id="*" onclick="giatri('*')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="0" id="0" onclick="giatri('0')"></td>
+    <td><input type="button" value="." id="." onclick="giatri('.')"></td>
+    <td><input type="button" value="=" id="=" onclick="daura()"></td>
+    <td><input type="button" value="+" id="+" onclick="giatri('+')"></td>
+  </tr>
+</table>
+<script src="ungdungmaytinh.js"></script>
+</body>
+</html>
